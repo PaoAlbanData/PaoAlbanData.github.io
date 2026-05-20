@@ -66,7 +66,7 @@ const siteConfig: SiteConfig = {
         title: 'Transformando datos en información útil para la toma de decisiones',
         text: "Soy Paola Alban, Ingeniera Industrial con experiencia en análisis de información, gestión de procesos y reporting. Este portfolio reúne proyectos desarrollados con Python, SQL, Power BI y Machine Learning aplicado.",
         image: {
-            src: Data_science_analytics,
+            src: hero,
             alt: 'Paola Alban, portfolio de Data Analytics y Business Intelligence'
         },
         actions: [
