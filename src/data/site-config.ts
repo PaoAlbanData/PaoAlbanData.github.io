@@ -1,5 +1,5 @@
 import avatar from '../assets/images/avatar.jpg';
-import hero from '../assets/images/hero.jpg';
+import hero from '../assets/images/Data_science_analytics.jpg';
 import type { SiteConfig } from '../types';
 
 const siteConfig: SiteConfig = {
@@ -9,7 +9,7 @@ const siteConfig: SiteConfig = {
         alt: 'Paola Albán'
     },
     title: 'Paola Alban | Data Analytics & Business Intelligence',
-    subtitle: 'Minimal Astro.js theme',
+    subtitle: 'Portafolio de proyectos de Data Analytics, Business Intelligence y Machine Learning aplicado.',
     description: 'Portafolio de proyectos de Data Analytics, Business Intelligence y Machine Learning aplicado.',
     image: {
         src: '/dante-preview.jpg',
@@ -53,36 +53,33 @@ const siteConfig: SiteConfig = {
     ],
     socialLinks: [
         {
-            text: 'Dribbble',
-            href: 'https://dribbble.com/'
+            text: 'LinkedIn',
+            href: 'https://www.linkedin.com/in/paola-alban-data/'
         },
+    
         {
-            text: 'Instagram',
-            href: 'https://instagram.com/'
-        },
-        {
-            text: 'X/Twitter',
-            href: 'https://twitter.com/'
+            text: 'Email',
+            href: 'mailto:paola.alban.data@gmail.com/'
         }
     ],
     hero: {
-        title: 'Hi There & Welcome to My Corner of the Web!',
-        text: "I'm **Paola Albán**, a web developer at Amazing Studio, dedicated to the realms of collaboration and artificial intelligence.\nMy approach involves embracing intuition, conducting just enough research, and leveraging aesthetics as a catalyst for exceptional products.\nI have a profound appreciation for top-notch software, visual design, and the principles of product-led growth.\n\nFeel free to explore some of my coding endeavors on [GitHub](https://github.com/JustGoodUI/dante-astro-theme) or follow me on [Twitter/X](https://twitter.com/justgoodui).",
+        title: 'Transformando datos en información útil para la toma de decisiones',
+        text: "Soy Paola Alban, Ingeniera Industrial con experiencia en análisis de información, gestión de procesos y reporting. Este portfolio reúne proyectos desarrollados con Python, SQL, Power BI y Machine Learning aplicado.",
         image: {
-            src: hero,
-            alt: 'A person sitting at a desk in front of a computer'
+            src: Data_science_analytics,
+            alt: 'Paola Alban, portfolio de Data Analytics y Business Intelligence'
         },
         actions: [
             {
-                text: 'Get in Touch',
+                text: 'Contactar',
                 href: '/contact'
             }
         ]
     },
     subscribe: {
-        enabled: true,
-        title: 'Subscribe to Dante Newsletter',
-        text: 'One update per week. All the latest posts directly in your inbox.',
+        enabled: false,
+        title: 'Subscribete al portafolio',
+        text: 'Recibe novedades sobre proyectos de Data Analytics, Business Intelligence y Machine Learning.',
         form: {
             action: '#'
         }
