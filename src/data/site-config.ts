@@ -1,4 +1,4 @@
-import avatar from '../assets/images/avatar.jpg';
+import avatar from '../assets/images/Data_science_analytics.jpg';
 import hero from '../assets/images/Data_science_analytics.jpg';
 import type { SiteConfig } from '../types';
 
