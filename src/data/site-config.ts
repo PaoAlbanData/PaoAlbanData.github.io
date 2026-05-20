@@ -6,11 +6,11 @@ const siteConfig: SiteConfig = {
     website: 'https://PaoAlbanData.github.io',
     avatar: {
         src: avatar,
-        alt: 'Ethan Donovan'
+        alt: 'Paola Albán'
     },
-    title: 'Dante',
+    title: 'Paola Alban | Data Analytics & Business Intelligence',
     subtitle: 'Minimal Astro.js theme',
-    description: 'Astro.js and Tailwind CSS theme for blog and portfolio by justgoodui.com',
+    description: 'Portafolio de proyectos de Data Analytics, Business Intelligence y Machine Learning aplicado.',
     image: {
         src: '/dante-preview.jpg',
         alt: 'Dante - Astro.js and Tailwind CSS theme'
