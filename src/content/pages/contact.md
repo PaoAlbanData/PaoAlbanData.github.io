@@ -20,5 +20,4 @@ GitHub: https://github.com/PaoAlbanData
 _Email:_
 Feel free to drop me an email at [paola.alban.data@gmail.com](mailto:example@example.com), and I'll do my best to respond as soon as possible.
 
-_Social Media:_
-Connect with me on social media as well. Find me on  [LinkedIn]([https://www.linkedin.com/](https://www.linkedin.com/in/paola-alban-data/).
+
