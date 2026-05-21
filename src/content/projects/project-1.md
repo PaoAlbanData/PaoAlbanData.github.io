@@ -2,10 +2,6 @@
 title: 'Predicción del Abandono Estudiantil con Machine Learning'
 description: 'Proyecto de Data Science aplicado a la predicción del abandono estudiantil en educación superior mediante análisis exploratorio, preparación de datos, modelos supervisados e interpretación con SHAP.'
 publishDate: 2026-05-21
-seo:
-  image:
-    src: '../../../assets/images/project-1.jpg'
-    alt: 'Vista previa del proyecto'
 ---
 
 ## Descripción general del proyecto
