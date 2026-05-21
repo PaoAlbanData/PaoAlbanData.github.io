@@ -1,66 +1,79 @@
 ---
-title: 'EcoBuddy: Sustainable Living App'
-description: EcoBuddy is a mobile app that gamifies sustainable living. Users can set eco-friendly goals, track their carbon footprint, and earn virtual rewards for adopting environmentally conscious habits.
-publishDate: 'Jan 02 2024'
-seo:
-  image:
-    src: '../../assets/images/project-1.jpg'
-    alt: Project preview
+título: 'Predicción del abandono estudiantil con Machine Learning'
+descripción: 'Proyecto de Data Science aplicado a la predicción del abandono estudiantil en educación superior mediante análisis exploratorio, preparación de datos, modelos supervisados e interpretación con SHAP.'
+fecha de publicación: '21 de mayo de 2026'
+repositorio: 'https://github.com/PaoAlbanData/Prediccion_abandono_estudiantil'
+SEO:
+  imagen:
+    src: '../../../assets/images/project-1.jpg'
+    alt: 'Vista previa del proyecto'
 ---
 
-![Project preview](../../assets/images/project-1.jpg)
+![Vista previa del proyecto](../../assets/images/project-1.jpg)
 
-**Note:** This case study is entirely fictional and created for the purpose of showcasing [Dante Astro.js theme functionality](https://justgoodui.com/astro-themes/dante/).
+## Descripción general del proyecto
 
-**Project Overview:**
-EcoBuddy is a revolutionary mobile application designed to make sustainable living accessible, engaging, and rewarding. With a focus on gamification and real-world impact, EcoBuddy encourages users to adopt eco-friendly habits, reduce their carbon footprint, and contribute to a healthier planet.
+Este proyecto aplica técnicas de Data Science y Machine Learning para predecir el abandono estudiantil en educación superior a partir de variables académicas, personales y socioeconómicas.
 
-## Objectives
+El objetivo principal es identificar patrones asociados al riesgo de abandono y construir un modelo predictivo capaz de clasificar a los estudiantes según su situación académica: abandono, continuidad o graduación.
 
-1. Develop a user-friendly mobile app that motivates individuals to adopt sustainable practices in their daily lives.
-2. Utilize gamification elements to make sustainable living fun and interactive.
-3. Provide educational resources and personalized challenges to empower users to make informed eco-conscious decisions.
+El proyecto incluye análisis exploratorio de datos, preparación de variables, comparación de modelos supervisados, optimización del modelo final e interpretación de resultados mediante técnicas de explicabilidad.
 
-## Features
+## Objetivo
 
-1. **EcoScore and Challenges:**
+Desarrollar un modelo de Machine Learning que permita anticipar posibles casos de abandono estudiantil a partir de información académica y socioeconómica, aportando una visión analítica útil para la toma de decisiones en contextos educativos.
 
-- Users are assigned an EcoScore based on their sustainable activities and choices.
-- Daily and weekly challenges encourage users to adopt new habits and compete with friends or the community to earn EcoPoints.
+## Conjunto de datos utilizado
 
-2. **Personalized Eco-Goals:**
+El proyecto utiliza el conjunto de datos Predict Students' Dropout and Academic Success, disponible en el UCI Machine Learning Repository.
 
-- Users can set and track personalized eco-goals, such as reducing plastic usage, conserving water, or choosing eco-friendly transportation.
-- The app provides tips and suggestions to help users achieve their goals.
+El dataset contiene información académica, demográfica y socioeconómica de estudiantes de educación superior, junto con una variable objetivo que clasifica el resultado académico final en tres categorías: abandono, continuidad o graduación.
 
-3. **Green Rewards Marketplace:**
+## Proceso desarrollado
 
-- EcoPoints earned through challenges and sustainable actions can be redeemed in a virtual Green Rewards Marketplace.
-- The marketplace offers discounts on eco-friendly products, services, and even contributions to environmental causes.
+El desarrollo del proyecto se estructuró en las siguientes fases:
 
-4. **Community Hub:**
+1. Carga y revisión inicial de los datos.
+2. Análisis exploratorio de datos.
+3. Limpieza y transformación de variables.
+4. Codificación de variables categóricas.
+5. División del conjunto de datos en entrenamiento y prueba.
+6. Entrenamiento y comparación de modelos supervisados.
+7. Optimización del modelo final.
+8. Evaluación mediante métricas de clasificación.
+9. Interpretación del modelo con técnicas de explicabilidad.
 
-- A community feature allows users to connect, share their eco-friendly achievements, and inspire others.
-- Users can join local eco-groups, organize clean-up events, and collaborate on sustainability projects.
+## Modelos evaluados
 
-5. **EcoEducator AI Assistant:**
+Durante el desarrollo se compararon distintos modelos de clasificación supervisada:
 
-- An AI-powered assistant, EcoEducator, provides personalized eco-tips, facts, and information based on users' preferences and habits.
-- Users can chat with EcoEducator for instant advice on sustainable living.
+1. Regresión Logística.
+2. Árbol de Decisión.
+3. Random Forest.
+4. XGBoost.
 
-## Technology Stack
+El modelo final seleccionado fue XGBoost, debido a su mejor equilibrio entre rendimiento predictivo, capacidad de generalización e interpretación de variables relevantes.
 
-- Frontend: React Native for cross-platform mobile app development.
-- Backend: Firebase for real-time data synchronization and user authentication.
-- Database: Firestore for scalable and flexible data storage.
-- AI Integration: Dialogflow for natural language processing and conversation with EcoEducator.
+## Resultados principales
 
-## Outcome
+El modelo permitió identificar variables académicas especialmente relevantes para la predicción del abandono, destacando el rendimiento del estudiante durante los primeros semestres.
 
-EcoBuddy has successfully created a community of environmentally conscious individuals who actively participate in sustainable living practices. The app not only educates and motivates users but also provides tangible rewards for their commitment to a greener lifestyle, fostering a positive impact on the environment.
+Las variables relacionadas con unidades curriculares aprobadas, calificaciones obtenidas y desempeño académico temprano mostraron un peso importante en la clasificación de los estudiantes.
 
-## Client Testimonial
+Además, se utilizaron técnicas de interpretación como SHAP para analizar la influencia de las variables en las predicciones del modelo.
 
-> We couldn't be happier with the results delivered by Ethan Donovan. From the initial concept discussions to the final product, their responsiveness and collaborative approach were impressive. Our startup's website now stands out, thanks to their creative input and commitment to excellence.
+## Herramientas y tecnologías
 
-**Note:** This case study is entirely fictional and created for the purpose of showcasing [Dante Astro.js theme functionality](https://justgoodui.com/astro-themes/dante/).
+Python, pandas, NumPy, scikit-learn, XGBoost, Matplotlib, Seaborn, SHAP y Google Colab/Jupyter Notebook.
+
+## Acceso al proyecto
+
+El desarrollo completo del proyecto está disponible en GitHub, incluyendo el README, el notebook y la documentación técnica del análisis.
+
+[Ver repositorio en GitHub](https://github.com/PaoAlbanData/Prediccion_abandono_estudiantil)
+
+## Conclusión
+
+Este proyecto muestra cómo el Machine Learning puede aplicarse en el ámbito educativo para apoyar la detección temprana de estudiantes en riesgo de abandono.
+
+Más allá de la predicción, el análisis permite comprender qué factores influyen con mayor intensidad en el desempeño académico, aportando información útil para diseñar estrategias de seguimiento, orientación y prevención.
