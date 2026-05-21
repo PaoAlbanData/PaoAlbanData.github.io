@@ -3,13 +3,7 @@ título: 'Predicción del abandono estudiantil con Machine Learning'
 descripción: 'Proyecto de Data Science aplicado a la predicción del abandono estudiantil en educación superior mediante análisis exploratorio, preparación de datos, modelos supervisados e interpretación con SHAP.'
 fecha de publicación: '21 de mayo de 2026'
 repositorio: 'https://github.com/PaoAlbanData/Prediccion_abandono_estudiantil'
-SEO:
-  imagen:
-    src: '../../../assets/images/project-1.jpg'
-    alt: 'Vista previa del proyecto'
 ---
-
-![Vista previa del proyecto](../../assets/images/project-1.jpg)
 
 ## Descripción general del proyecto
 
