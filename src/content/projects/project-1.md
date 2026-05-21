@@ -61,7 +61,7 @@ Python, pandas, NumPy, scikit-learn, XGBoost, Matplotlib, Seaborn, SHAP y Google
 
 ## Acceso al proyecto
 
-El desarrollo completo del proyecto está disponible en GitHub, incluyendo el README, el notebook y la documentación técnica del análisis.
+El repositorio incluye el README, el notebook principal, la descripción del proceso de análisis, la comparación de modelos y la interpretación de resultados.
 
 [Ver repositorio en GitHub](https://github.com/PaoAlbanData/Prediccion_abandono_estudiantil)
 
