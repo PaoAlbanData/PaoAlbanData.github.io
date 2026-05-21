@@ -64,7 +64,7 @@ const siteConfig: SiteConfig = {
     ],
     hero: {
         title: 'Transformando datos en información útil para la toma de decisiones',
-        text: "Soy Paola Alban, Ingeniera Industrial con experiencia en análisis de información, gestión de procesos y reporting. Este portfolio reúne proyectos desarrollados con Python, SQL, Power BI y Machine Learning aplicado.",
+        text: "Soy Paola Albán, Ingeniera Industrial con experiencia en análisis de información, gestión de procesos, reporting y toma de decisiones basada en datos. He finalizado un Máster en Data Science y actualmente curso un MBA en Data Analytics, consolidando una evolución profesional orientada hacia Data Analytics, Business Intelligence y Machine Learning aplicado. Este portafolio reúne proyectos desarrollados con Python, SQL, Power BI y técnicas de Machine Learning, enfocados en transformar datos en información útil para el análisis, la visualización, la predicción y la mejora de procesos.",
         image: {
             src: hero,
             alt: 'Paola Alban, portfolio de Data Analytics y Business Intelligence'
