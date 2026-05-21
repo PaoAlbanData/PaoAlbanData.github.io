@@ -13,9 +13,9 @@ Si quieres conocer más sobre mi trabajo, puedes revisar mis proyectos en GitHub
 
 Email: paola.alban.data@gmail.com
 
-LinkedIn: https://www.linkedin.com/in/paola-alban/](https://www.linkedin.com/in/paola-alban-data/
+LinkedIn: https://www.linkedin.com/in/paola-alban-data/
 
-GitHub: https://github.com/PaoAlbanData:
+GitHub: https://github.com/PaoAlbanData
 
 _Email:_
 Feel free to drop me an email at [paola.alban.data@gmail.com](mailto:example@example.com), and I'll do my best to respond as soon as possible.
