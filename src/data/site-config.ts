@@ -11,10 +11,10 @@ const siteConfig: SiteConfig = {
     title: 'Paola Alban | Data Analytics & Business Intelligence',
     subtitle: 'Portafolio de proyectos de Data Analytics, Business Intelligence y Machine Learning aplicado.',
     description: 'Portafolio de proyectos de Data Analytics, Business Intelligence y Machine Learning aplicado.',
-    image: {
-        src: '/dante-preview.jpg',
-        alt: 'Dante - Astro.js and Tailwind CSS theme'
-    },
+   image: {
+    src: '/Data_science_analytics.jpg',
+    alt: 'Paola Albán - Data Analytics and Business Intelligence Portfolio'
+},
     headerNavLinks: [
         {
             text: 'Home',
