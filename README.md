@@ -1,12 +1,12 @@
-# Paola Alban | Portfolio de Data Analytics
+# Paola Alban | Portafolio de Data Analytics
 
-Portfolio personal desarrollado con Astro y Tailwind CSS para presentar proyectos de Data Analytics, Business Intelligence y Machine Learning aplicado.
+Portfaolio personal desarrollado con Astro y Tailwind CSS para presentar proyectos de Data Analytics, Business Intelligence y Machine Learning aplicado.
 
-## Sobre este portfolio
+## Sobre este portafolio
 
 Este sitio reúne proyectos orientados al análisis de datos, visualización, reporting, modelos predictivos y toma de decisiones basada en datos.
 
-El objetivo es mostrar de forma clara y práctica mi evolución profesional hacia el área de Data Analytics y Business Intelligence, combinando experiencia previa en análisis de información, gestión de procesos y formación reciente en Data Science.
+El objetivo es presentar de forma clara y práctica mi perfil profesional en Data Analytics y Business Intelligence, integrando mi experiencia previa en análisis de información, gestión de procesos y reporting con mi formación reciente en Data Science y Data Analytics.
 
 ## Tecnologías utilizadas
 
@@ -21,6 +21,7 @@ El objetivo es mostrar de forma clara y práctica mi evolución profesional haci
 ## Proyectos incluidos
 
 - Predicción de abandono estudiantil mediante Machine Learning
+  Próximamente:
 - Customer Retention Analytics para E-commerce
 - Dashboards de Business Intelligence con Power BI
 
