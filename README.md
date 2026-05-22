@@ -21,7 +21,9 @@ El objetivo es presentar de forma clara y práctica mi perfil profesional en Dat
 ## Proyectos incluidos
 
 - Predicción de abandono estudiantil mediante Machine Learning
-  Próximamente:
+
+## Próximamente
+
 - Customer Retention Analytics para E-commerce
 - Dashboards de Business Intelligence con Power BI
 
