@@ -2,10 +2,6 @@
 title: Segmentación de jugadores con K-Means
 excerpt: Proyecto de aprendizaje no supervisado aplicado a la segmentación de jugadores de videojuegos según su tiempo diario de juego y gasto en moneda virtual.
 publishDate: 2026-05-25
-seo:
-  image:
-    src: /project-2.jpg
-    alt: Segmentación de jugadores con K-Means
 ---
 
 # Segmentación de jugadores de videojuegos con K-Means
