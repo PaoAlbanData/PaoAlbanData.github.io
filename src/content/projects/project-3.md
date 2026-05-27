@@ -1,6 +1,6 @@
 ---
 title: 'Análisis exploratorio de alojamientos Airbnb en Barcelona'
-excerpt: 'Proyecto de análisis exploratorio de datos aplicado a alojamientos de Airbnb en Barcelona, enfocado en precios, disponibilidad, distribución geográfica y patrones de concentración turística.'
+description: 'Proyecto de análisis exploratorio de datos aplicado a alojamientos de Airbnb en Barcelona, enfocado en precios, disponibilidad, distribución geográfica y patrones de concentración turística.'
 publishDate: 2026-05-26
 ---
 
