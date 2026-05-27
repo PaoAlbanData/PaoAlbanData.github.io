@@ -4,6 +4,8 @@ excerpt: 'Proyecto de análisis exploratorio de datos aplicado a alojamientos de
 publishDate: 2026-05-26
 ---
 
+## Descripción general del proyecto
+
 Este proyecto presenta un análisis exploratorio de datos de alojamientos de Airbnb en la ciudad de Barcelona. El objetivo principal es estudiar cómo se distribuye la oferta de alojamientos en la ciudad, qué variables se relacionan con el precio, qué patrones aparecen en la disponibilidad mensual y hasta qué punto los datos permiten reflexionar sobre algunas de las propuestas de valor asociadas a Airbnb.
 
 El análisis parte de un dataset con información sobre alojamientos publicados en la plataforma, incluyendo variables relacionadas con ubicación, precio, disponibilidad, número de habitaciones, camas, baños, reseñas y características generales de cada alojamiento.
