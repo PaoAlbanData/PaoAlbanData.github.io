@@ -45,10 +45,11 @@ Las horas liberadas tienen un valor económico potencial, pero no se convierten 
 
 ## Tecnologías utilizadas
 
-React, Vite, Tailwind CSS, Recharts, jsPDF y JavaScript. Todos los cálculos se realizan en el navegador, sin backend, sin base de datos y sin APIs de pago.
+React, Vite, Tailwind CSS, Recharts, jsPDF y JavaScript. Todos los cálculos se realizan en el navegador, sin backend, sin base de datos y sin APIs de pago. Publicada con GitHub Pages.
 
 ## Enlaces del proyecto
 
+- [Ver la demo en vivo](https://paoalbandata.github.io/ai-savings-calculator/)
 - [Ver repositorio en GitHub](https://github.com/PaoAlbanData/ai-savings-calculator)
 
 ## Conclusión
