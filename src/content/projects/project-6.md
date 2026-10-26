@@ -1,16 +1,16 @@
 ---
-title: 'Clinical Protocol AI: consulta documental de protocolos clínicos'
-description: 'Aplicación web que responde preguntas sobre protocolos clínicos por texto o voz, con extractos literales, documento y página exacta del PDF, búsqueda 100 % en el navegador y coste 0 €.'
+title: 'Clinical Protocol AI: consulta documental de una guía clínica'
+description: 'Aplicación web que responde preguntas sobre la enfermedad tromboembólica venosa por texto o voz, con extractos literales, página exacta del PDF y clase de recomendación, búsqueda 100 % en el navegador y coste 0 €.'
 publishDate: 2026-10-25
 ---
 
 ## Descripción general del proyecto
 
-Clinical Protocol AI es una aplicación web para consultar protocolos clínicos hospitalarios mediante preguntas escritas o por voz. En lugar de generar texto libre, localiza los fragmentos relevantes de los documentos y responde con extractos literales, indicando el documento, la institución, el año y la página exacta del PDF.
+Clinical Protocol AI es una aplicación web para consultar una guía clínica mediante preguntas escritas o por voz. En lugar de generar texto libre, localiza los fragmentos relevantes del documento y responde con extractos literales, indicando la sección, la página exacta del PDF y, cuando existe, la clase de recomendación y el nivel de evidencia.
 
-Si los protocolos no contienen información suficiente, la aplicación lo dice: «No encuentro información suficiente en los protocolos incluidos para responder con seguridad».
+Si el documento no contiene información suficiente, la aplicación lo dice: «No encuentro información suficiente en los protocolos incluidos para responder con seguridad».
 
-Utiliza como material de simulación cuatro Procesos Asistenciales Integrados de la Junta de Andalucía (trauma grave, EPOC, ictus y diabetes mellitus), publicados con licencia CC BY-NC-ND 4.0.
+El documento consultado es el Consenso para el Diagnóstico y Tratamiento de la Enfermedad Tromboembólica Venosa de la Sociedad Argentina de Cardiología y la Sociedad Argentina de Hematología (2025), publicado con licencia CC BY-NC-SA 2.5 Argentina. Abarca la tromboembolia de pulmón y la trombosis venosa profunda: diagnóstico, estratificación del riesgo, anticoagulación, fibrinólisis, filtros de vena cava y poblaciones especiales.
 
 ## Objetivo
 
@@ -19,25 +19,31 @@ Demostrar cómo construir una herramienta de consulta documental fiable para un 
 ## Funcionalidades
 
 - Chat de preguntas escritas y dictado por voz con la Web Speech API del navegador.
-- Respuestas con referencias numeradas, extracto literal y botón para abrir el PDF original en la página citada.
-- Rechazo de preguntas cuando los términos relevantes no aparecen en las fuentes.
-- Aviso cuando las fuentes proceden de protocolos distintos.
+- Respuestas con referencias numeradas, extracto literal, sección del documento y botón para abrir el PDF original en la página citada.
+- Clase de recomendación y nivel de evidencia mostrados junto a cada recomendación.
+- Rechazo de preguntas cuando los términos relevantes no aparecen en el documento.
 - Lectura en voz alta y copia de la respuesta con sus referencias.
-- IA generativa local opcional (WebLLM) que redacta la respuesta en el propio dispositivo, solo si cada frase cita una fuente y sus cifras aparecen en los documentos.
+- IA generativa local opcional (WebLLM) que redacta la respuesta en el propio dispositivo, solo si cada frase cita una fuente y sus cifras aparecen en el documento.
 - Interfaz en español, adaptada a móvil, con avisos de uso exclusivamente demostrativo.
 
 ## Arquitectura y decisiones técnicas
 
-- **Preparación con Python y PyMuPDF:** extracción del texto, limpieza de cabeceras y guiones de corte y fragmentación por página, de modo que cada cita apunta a una única página. Un script verifica que los 754 fragmentos aparecen en la página que citan.
-- **Búsqueda BM25 en el navegador (MiniSearch)** sobre un índice estático de 174 KB comprimido, con normalización del español, sinónimos clínicos, reordenación por proximidad y una verificación de cobertura ponderada por IDF que decide si hay evidencia suficiente.
+- **Preparación con Python y PyMuPDF usando coordenadas:** eliminación de cabeceras y de la bibliografía intercalada, unión solo de líneas contiguas y fragmentación por página, de modo que cada cita apunta a una única página. Un script verifica que los 481 fragmentos aparecen en la página que citan.
+- **Clase de recomendación por posición:** en las tablas del consenso, la clase y el nivel de evidencia se asignan a cada recomendación según su fila en la página, y solo si no hay ambigüedad (219 recomendaciones).
+- **Búsqueda BM25 en el navegador (MiniSearch)** sobre un índice estático de 108 KB comprimido, con normalización del español, sinónimos clínicos, equivalencias de terminología entre España y Argentina y una verificación de cobertura ponderada por IDF que decide si hay evidencia suficiente.
 - **Sitio estático en Vercel**, sin backend, sin base de datos y sin APIs de pago. Las preguntas no salen del navegador.
 - **Seguridad:** política de seguridad de contenidos (CSP) restrictiva, sin cookies ni analítica, y bloqueo de consultas con identificadores personales.
 
+## Selección del documento y licencias
+
+La primera versión usaba procesos asistenciales de 2015–2020, demasiado antiguos. Antes de cambiar de documento se revisaron las licencias: una guía internacional de 2026 prohibía expresamente su distribución y un consenso español no tenía licencia abierta, así que se eligió un consenso actual, en español y con licencia que permite publicarlo.
+
 ## Pruebas y resultados
 
-- 36 pruebas automatizadas: 20 preguntas con respuesta en los cuatro protocolos (página correcta y dato literal recuperado), 8 preguntas sin evidencia rechazadas correctamente y pruebas de las salvaguardas de la IA local.
-- Consultas resueltas en 1–10 ms y 0 peticiones a dominios externos en producción.
-- Documentación honesta de las limitaciones: la búsqueda léxica no capta todas las paráfrasis y un modelo local de 1,5B parámetros llegó a inventar una respuesta, lo que motivó nuevas salvaguardas que hoy impiden mostrarla.
+- 38 pruebas automatizadas: 21 preguntas con respuesta (página correcta y dato literal recuperado), 8 preguntas sin evidencia rechazadas correctamente y pruebas de las salvaguardas de la IA local.
+- Validación de la clase de recomendación: todas las recomendaciones de clase III son negativas («se desaconseja», «no se recomienda»), como corresponde.
+- Consultas resueltas en milisegundos y 0 peticiones a dominios externos en producción.
+- Documentación honesta de las limitaciones y de los errores encontrados y corregidos, como la asignación inicial de clases por orden de aparición, que se sustituyó por la asignación por coordenadas.
 
 ## Tecnologías utilizadas
 
@@ -50,4 +56,4 @@ React, TypeScript, Vite, Tailwind CSS, MiniSearch (BM25), Python, PyMuPDF, WebLL
 
 ## Aviso
 
-Demostración técnica sin uso clínico: no es un sistema de diagnóstico, prescripción ni apoyo a decisiones clínicas. Los documentos (2015–2020) se usan solo como material de simulación.
+Demostración técnica sin uso clínico: no es un sistema de diagnóstico, prescripción ni apoyo a decisiones clínicas. Las respuestas deben verificarse siempre en el documento original y en los protocolos de cada centro.
