@@ -11,7 +11,7 @@
 (function () {
     'use strict';
 
-    var GA_ID = 'G-6L7LVJGS1F';
+    var GA_ID = 'G-H9Z139RQ2R';
     var STORAGE_KEY = 'pa-cookie-consent';
     var MAX_AGE_MS = 365 * 24 * 60 * 60 * 1000;
     var POLICY_URL = 'https://paoalbandata.github.io/cookies/';

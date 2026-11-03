@@ -20,7 +20,7 @@ Solo uso cookies de **Google Analytics** para saber cuántas personas visitan la
 | Cookie | Proveedor | Para qué sirve | Duración |
 |---|---|---|---|
 | `_ga` | Google | Distinguir visitantes de forma anónima | 2 años |
-| `_ga_6L7LVJGS1F` | Google | Mantener el estado de la visita | 2 años |
+| `_ga_H9Z139RQ2R` | Google | Mantener el estado de la visita | 2 años |
 
 Estas cookies **solo se instalan si las aceptas** en el aviso que aparece al entrar. Si las rechazas, la web funciona igual y no se envía ningún dato a Google Analytics.
 
