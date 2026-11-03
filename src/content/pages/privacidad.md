@@ -29,14 +29,17 @@ Esta política explica cómo se tratan los datos personales en este portfolio y 
 
 - Base legal: el interés legítimo en mantener la web segura y disponible (art. 6.1.f RGPD).
 
+**Proyectos de demostración.** Los formularios de los proyectos de demostración, como la cita de Sonrisa Imperial, no envían ni guardan los datos que se escriben en ellos. Algunas imágenes de esos proyectos se cargan desde Unsplash, que recibe la dirección IP del visitante para servirlas.
+
 No tomo decisiones automatizadas ni elaboro perfiles con estos datos, y no los vendo ni los cedo a terceros.
 
 ## Quién más accede a los datos
 
 - **Google Ireland Limited**, como proveedor de Google Analytics.
 - **GitHub, Inc.**, como proveedor del alojamiento.
+- **Unsplash**, para las imágenes de algunos proyectos de demostración.
 
-Ambos pueden tratar datos en Estados Unidos. Esas transferencias se amparan en el Marco de Privacidad de Datos UE-EE. UU. y en las cláusulas contractuales tipo de la Comisión Europea.
+Pueden tratar datos en Estados Unidos. Esas transferencias se amparan en el Marco de Privacidad de Datos UE-EE. UU. y en las cláusulas contractuales tipo de la Comisión Europea.
 
 ## Tus derechos
 
