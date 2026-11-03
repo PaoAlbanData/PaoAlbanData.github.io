@@ -38,6 +38,10 @@ Al pulsar el botón vuelve a aparecer el aviso y puedes aceptar o rechazar. Si r
 
 También puedes borrar o bloquear las cookies desde la configuración de tu navegador.
 
+## Más información
+
+El tratamiento de tus datos se explica en la [política de privacidad](/privacidad/).
+
 ## Responsable
 
 Paola Alban. Para cualquier consulta sobre esta política puedes escribirme a paola.alban.data@gmail.com.

@@ -43,8 +43,12 @@ const siteConfig: SiteConfig = {
             href: '/contact'
         },
         {
-            text: 'Terms',
-            href: '/terms'
+            text: 'Aviso legal',
+            href: '/aviso-legal'
+        },
+        {
+            text: 'Privacidad',
+            href: '/privacidad'
         },
         {
             text: 'Cookies',
