@@ -47,6 +47,10 @@ const siteConfig: SiteConfig = {
             href: '/terms'
         },
         {
+            text: 'Cookies',
+            href: '/cookies'
+        },
+        {
             text: 'Download theme',
             href: 'https://github.com/JustGoodUI/dante-astro-theme'
         }
